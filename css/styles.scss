@@ -1,4 +1,5 @@
 $indigo-dye: #083D77;
+$light-blue: #B0D0D3;
 $raisin-black: #2E2C2F;
 $white: #FFFFFF;
 
@@ -11,23 +12,28 @@ html > body {
 header {
   background-color: $indigo-dye;
   color: $white;
-  padding: 1em 2em;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(12, 1fr);
+  font-size: 1.1em
 }
 
 header a {
   color: $white;
-  font-size: 1.05em;
   text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
 }
 
 #header-title {
   place-self: center;
+  grid-column: 1 / 7;
 }
-
 #header-nav {
   place-self: center;
+  text-align: center;
+  grid-column: 7 / 13;
 }
 
 #header-nav nav ul {
@@ -41,23 +47,48 @@ header a {
 
 main {
   display: grid;
-  padding: 2em;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+section {
+  grid-column: 3 / 11;
+}
+
+#about img {
+  border-radius: 50%;
+  width: 20%;
+  height: auto;
 }
 
 footer {
   background-color: $raisin-black;
   color: $white;
-  padding: 1em 2em;
+  padding: 0.5em;
   text-align: center;
 }
 
 @media screen and (max-width: 600px) {
   header {
-    grid-template-columns: 1fr;
-    padding: 0.5em;
+    text-align: center;
+  }
+  
+  #header-title {
+    grid-column: 1 / 13;
   }
 
   #header-nav {
-    text-align: center;
+    grid-column: 1 / 13;
+  }
+
+  section {
+    grid-column: 2 / 12;
+  }
+
+  #about {
+    grid-column: 2 / 12;
+  }
+
+  #about img {
+    width: 60%;
   }
 }

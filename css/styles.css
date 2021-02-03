@@ -7,25 +7,35 @@ html > body {
 header {
   background-color: #083D77;
   color: #FFFFFF;
-  padding: 1em 2em;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  font-size: 1.1em;
 }
 
 header a {
   color: #FFFFFF;
-  font-size: 1.05em;
   text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
 }
 
 #header-title {
   place-self: center;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1 / 7;
 }
 
 #header-nav {
   place-self: center;
+  text-align: center;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 6;
+  grid-column: 7 / 13;
 }
 
 #header-nav nav ul {
@@ -41,24 +51,55 @@ header a {
 main {
   display: -ms-grid;
   display: grid;
-  padding: 2em;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+}
+
+section {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 8;
+  grid-column: 3 / 11;
+}
+
+#about img {
+  border-radius: 50%;
+  width: 20%;
+  height: auto;
 }
 
 footer {
   background-color: #2E2C2F;
   color: #FFFFFF;
-  padding: 1em 2em;
+  padding: 0.5em;
   text-align: center;
 }
 
 @media screen and (max-width: 600px) {
   header {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    padding: 0.5em;
+    text-align: center;
+  }
+  #header-title {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1 / 13;
   }
   #header-nav {
-    text-align: center;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1 / 13;
+  }
+  section {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 10;
+    grid-column: 2 / 12;
+  }
+  #about {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 10;
+    grid-column: 2 / 12;
+  }
+  #about img {
+    width: 60%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
