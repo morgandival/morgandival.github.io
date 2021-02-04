@@ -14,7 +14,8 @@ header {
   color: $white;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  font-size: 1.1em
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
 }
 
 header a {
@@ -54,10 +55,43 @@ section {
   grid-column: 3 / 11;
 }
 
-#about img {
+#about {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+#about-text {
+  grid-column: 2 / 8;
+  place-self: center;
+}
+
+#about-image {
+  grid-column: 9 / 12;
+  padding: 0.5em;
+  text-align: center;
+}
+
+#about-image img {
   border-radius: 50%;
-  width: 20%;
+  width: 80%;
   height: auto;
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+#projects-problems {
+  background-color: $light-blue;
+  grid-column: 2 / 6;
+  padding: 0 1em 0 1em;
+}
+
+#projects-stories {
+  background-color: $light-blue;
+  grid-column: 8 / 12;
+  padding: 0 1em 0 1em;
 }
 
 footer {
@@ -85,10 +119,32 @@ footer {
   }
 
   #about {
+    grid-column: 1 / 13;
+    margin: 0;
+  }
+
+  #about-text {
     grid-column: 2 / 12;
   }
 
-  #about img {
-    width: 60%;
+  #about-image {
+    grid-column: 3 / 11;
+  }
+
+  #about-image img {
+    width: 70%;
+  }
+
+  #projects {
+    grid-column: 1 / 13;
+  }
+
+  #projects-problems {
+    grid-column: 2 / 12;
+    margin-bottom: 0.5em;
+  }
+
+  #projects-stories {
+    grid-column: 2 / 12;
   }
 }
