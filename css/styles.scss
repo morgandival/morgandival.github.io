@@ -6,12 +6,15 @@ $white: #FFFFFF;
 html > body {
   margin: 0;
   padding: 0;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }
 
 header {
   background-color: $indigo-dye;
   color: $white;
+  grid-column: 1 / 13;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   font-size: 1.1em;
@@ -28,13 +31,12 @@ header a:hover {
 }
 
 #header-title {
-  place-self: center;
-  grid-column: 1 / 7;
+  grid-column: 3 / 7;
 }
 #header-nav {
-  place-self: center;
-  text-align: center;
-  grid-column: 7 / 13;
+  align-self: center;
+  text-align: right;
+  grid-column: 7 / 11;
 }
 
 #header-nav nav ul {
@@ -46,13 +48,9 @@ header a:hover {
   margin: 18px;
 }
 
-main {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-}
-
 section {
-  grid-column: 3 / 11;
+  margin: 0.5em 0 0.5em 0;
+  grid-column: 1 / 13;
 }
 
 #about {
@@ -61,42 +59,61 @@ section {
 }
 
 #about-text {
-  grid-column: 2 / 8;
-  place-self: center;
+  grid-column: 3 / 8;
+  align-self: center;
+  font-size: 1.6em;
 }
 
 #about-image {
-  grid-column: 9 / 12;
-  padding: 0.5em;
-  text-align: center;
+  grid-column: 8 / 11;
+  text-align: right;
 }
 
 #about-image img {
   border-radius: 50%;
-  width: 80%;
+  width: 100%;
   height: auto;
 }
 
-#projects {
+#skills {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
 
-#projects-problems {
+#skills-tagline {
+  grid-column: 3 / 11;
+}
+
+#skills-frontend {
+  grid-column: 3 / 5;
+}
+
+#skills-backend {
+  grid-column: 6 / 8;
+}
+
+#skills-other {
+  grid-column: 9 / 11;
+}
+
+.skills-box {
   background-color: $light-blue;
-  grid-column: 2 / 6;
+  border-radius: 0.5em;
   padding: 0 1em 0 1em;
 }
 
-#projects-stories {
-  background-color: $light-blue;
-  grid-column: 8 / 12;
-  padding: 0 1em 0 1em;
+#projects {
+  grid-column: 3 / 11;
+}
+
+#contact {
+  grid-column: 3 / 11;
 }
 
 footer {
   background-color: $raisin-black;
   color: $white;
+  grid-column: 1 / 13;
   padding: 0.5em;
   text-align: center;
 }
@@ -112,15 +129,11 @@ footer {
 
   #header-nav {
     grid-column: 1 / 13;
-  }
-
-  section {
-    grid-column: 2 / 12;
+    text-align: center;
   }
 
   #about {
     grid-column: 1 / 13;
-    margin: 0;
   }
 
   #about-text {
@@ -128,23 +141,28 @@ footer {
   }
 
   #about-image {
-    grid-column: 3 / 11;
+    grid-column: 2 / 12;
+    text-align: center;
   }
 
-  #about-image img {
-    width: 70%;
-  }
-
-  #projects {
+  #skills {
     grid-column: 1 / 13;
   }
 
-  #projects-problems {
-    grid-column: 2 / 12;
-    margin-bottom: 0.5em;
+  #skills-tagline {
+    text-align: center;
   }
 
-  #projects-stories {
+  #skills-frontend, #skills-backend, #skills-other {
+    grid-column: 2 / 12;
+    margin: 0.5em 0 0.5em 0;
+  }
+
+  #projects {
+    grid-column: 2 / 12;
+  }
+
+  #contact {
     grid-column: 2 / 12;
   }
 }
