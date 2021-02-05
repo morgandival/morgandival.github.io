@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html > body {
   margin: 0;
   padding: 0;
@@ -54,7 +55,7 @@ header a:hover {
 
 #header-nav nav ul li {
   display: inline;
-  margin: 18px;
+  margin: 10px;
 }
 
 section {
@@ -90,7 +91,7 @@ section {
 
 #about-image img {
   border-radius: 50%;
-  width: 100%;
+  width: 90%;
   height: auto;
 }
 
@@ -129,6 +130,12 @@ section {
   background-color: #B0D0D3;
   border-radius: 0.5em;
   padding: 0 1em 0 1em;
+}
+
+.skills-box li {
+  list-style-type: "✔️";
+  -webkit-padding-start: 1ch;
+          padding-inline-start: 1ch;
 }
 
 #projects {
