@@ -136,6 +136,7 @@ section {
   list-style-type: "✔️";
   -webkit-padding-start: 1ch;
           padding-inline-start: 1ch;
+  margin-top: 0.5em;
 }
 
 #projects {
