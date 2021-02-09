@@ -1,4 +1,3 @@
-window.onload = function() {
-  var date = new Date();
-  document.getElementById("copyyear").innerText = date.getFullYear();
+window.onload = function(){
+  document.getElementById("copyyear").innerText = new Date().getFullYear();
 }
