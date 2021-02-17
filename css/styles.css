@@ -132,6 +132,11 @@ section {
   padding: 0 1em 0 1em;
 }
 
+.skills-box ul {
+  margin: 0.2em;
+  padding: 0 1em 1em 1em;
+}
+
 .skills-box li {
   list-style-type: "✔️";
   -webkit-padding-start: 1ch;
