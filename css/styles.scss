@@ -18,7 +18,7 @@ header {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   font-size: 1.1em;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 
 header a {
@@ -33,6 +33,7 @@ header a:hover {
 #header-title {
   grid-column: 3 / 7;
 }
+
 #header-nav {
   align-self: center;
   text-align: right;
@@ -49,7 +50,7 @@ header a:hover {
 }
 
 section {
-  margin: 0.5em 0 0.5em 0;
+  margin: 1em 0 1em 0;
   grid-column: 1 / 13;
 }
 
@@ -128,12 +129,28 @@ section {
 
 #contact {
   grid-column: 3 / 11;
+
+}
+
+.email-button {
+  color: $white;
+  background-color: $indigo-dye;
+  border-radius: 0.5em;
+  font-size: 1.2em;
+  margin: 0.5em 0 0.5em 0;
+  padding: 0.5em 2em 0.5em 2em;
+  text-decoration: none;
+}
+
+.email-button:hover {
+  text-decoration: underline;
 }
 
 footer {
   background-color: $raisin-black;
   color: $white;
   grid-column: 1 / 13;
+  margin-top: 1em;
   padding: 0.5em;
   text-align: center;
 }
