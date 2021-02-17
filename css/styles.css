@@ -164,9 +164,23 @@ section {
 }
 
 #contact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+}
+
+#contact-tagline {
   -ms-grid-column: 3;
   -ms-grid-column-span: 8;
   grid-column: 3 / 11;
+}
+
+#contact-email {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 8;
+  grid-column: 3 / 11;
+  margin: 1em 0 1em 0;
 }
 
 .email-button {
@@ -174,7 +188,6 @@ section {
   background-color: #083D77;
   border-radius: 0.5em;
   font-size: 1.2em;
-  margin: 0.5em 0 0.5em 0;
   padding: 0.5em 2em 0.5em 2em;
   text-decoration: none;
 }
@@ -243,21 +256,33 @@ footer {
     -ms-grid-column: 1;
     -ms-grid-column-span: 12;
     grid-column: 1 / 13;
+    text-align: center;
   }
   #projects-tagline {
-    text-align: center;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 10;
+    grid-column: 2 / 12;
   }
   #projects p {
     -ms-grid-column: 2;
     -ms-grid-column-span: 10;
     grid-column: 2 / 12;
-    text-align: center;
   }
   #contact {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1 / 13;
+    text-align: center;
+  }
+  #contact-tagline {
     -ms-grid-column: 2;
     -ms-grid-column-span: 10;
     grid-column: 2 / 12;
-    text-align: center;
+  }
+  #contact-email {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 10;
+    grid-column: 2 / 12;
   }
 }
 /*# sourceMappingURL=styles.css.map */
