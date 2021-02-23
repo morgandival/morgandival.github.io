@@ -1,0 +1,231 @@
+$indigo-dye: #083D77;
+$light-blue: #B0D0D3;
+$raisin-black: #2E2C2F;
+$white: #FFFFFF;
+
+html > body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+header {
+  background-color: $indigo-dye;
+  color: $white;
+  grid-column: 1 / 13;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  font-size: 1.1em;
+  margin-bottom: 1em;
+}
+
+header a {
+  color: $white;
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+#header-title {
+  grid-column: 3 / 7;
+}
+
+#header-nav {
+  align-self: center;
+  text-align: right;
+  grid-column: 7 / 11;
+}
+
+#header-nav nav ul {
+  padding-inline-start: 0;
+}
+
+#header-nav nav ul li{
+  display: inline;  
+  margin: 10px;
+}
+
+section {
+  margin: 1em 0 1em 0;
+  grid-column: 1 / 13;
+}
+
+#about {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+#about-text {
+  grid-column: 3 / 8;
+  align-self: center;
+  font-size: 1.6em;
+}
+
+#about-image {
+  grid-column: 8 / 11;
+  text-align: right;
+}
+
+#about-image img {
+  border-radius: 50%;
+  width: 90%;
+  height: auto;
+}
+
+#skills {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+#skills-tagline {
+  grid-column: 3 / 11;
+}
+
+#skills-frontend {
+  grid-column: 3 / 5;
+}
+
+#skills-backend {
+  grid-column: 6 / 8;
+}
+
+#skills-other {
+  grid-column: 9 / 11;
+}
+
+.skills-box {
+  background-color: $light-blue;
+  border-radius: 0.5em;
+  padding: 0 1em 0 1em;
+}
+
+.skills-box ul {
+  margin: 0.2em;
+  padding: 0 1em 1em 1em;
+}
+
+.skills-box li {
+  list-style-type: "✔️";
+  padding-inline-start: 1ch;
+  margin-top: 0.5em;
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+#projects-tagline {
+  grid-column: 3 / 11;
+}
+
+#projects p {
+  grid-column: 3 / 11;
+}
+
+#contact {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+#contact-tagline {
+  grid-column: 3 / 11;
+}
+
+#contact-email {
+  grid-column: 3 / 11;
+  margin: 1em 0 1em 0;
+}
+
+.email-button {
+  color: $white;
+  background-color: $indigo-dye;
+  border-radius: 0.5em;
+  font-size: 1.2em;
+  padding: 0.5em 2em 0.5em 2em;
+  text-decoration: none;
+}
+
+.email-button:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: $raisin-black;
+  color: $white;
+  grid-column: 1 / 13;
+  margin-top: 1em;
+  padding: 0.5em;
+  text-align: center;
+}
+
+@media screen and (max-width: 48em) {
+  header {
+    text-align: center;
+  }
+  
+  #header-title {
+    grid-column: 1 / 13;
+  }
+
+  #header-nav {
+    grid-column: 1 / 13;
+    text-align: center;
+  }
+
+  #about {
+    grid-column: 1 / 13;
+  }
+
+  #about-text {
+    grid-column: 2 / 12;
+  }
+
+  #about-image {
+    grid-column: 2 / 12;
+    text-align: center;
+  }
+
+  #skills {
+    grid-column: 1 / 13;
+  }
+
+  #skills-tagline {
+    text-align: center;
+  }
+
+  #skills-frontend, #skills-backend, #skills-other {
+    grid-column: 2 / 12;
+    margin: 0.5em 0 0.5em 0;
+  }
+
+  #projects {
+    grid-column: 1 / 13;
+    text-align: center;
+  }
+
+  #projects-tagline {
+    grid-column: 2 / 12;
+  }
+
+  #projects p {
+    grid-column: 2 / 12;
+  }
+
+  #contact {
+    grid-column: 1 / 13;
+    text-align: center;
+  }
+
+  #contact-tagline {
+    grid-column: 2 / 12;
+  }
+
+  #contact-email {
+    grid-column: 2 / 12;
+  }
+}
