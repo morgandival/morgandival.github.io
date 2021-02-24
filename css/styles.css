@@ -157,10 +157,48 @@ section {
   grid-column: 3 / 11;
 }
 
-#projects p {
+.projects-box {
+  background-color: #4C6085;
+  border-radius: 0.5em;
+  color: #000000;
   -ms-grid-column: 3;
   -ms-grid-column-span: 8;
   grid-column: 3 / 11;
+  padding: 1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "image desc";
+}
+
+.projects-box-image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: image;
+}
+
+.projects-box-image img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.projects-box-desc {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: desc;
+  padding: 0 1em 0 1em;
+}
+
+.projects-box-desc a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.projects-box-desc a:hover {
+  text-decoration: underline;
 }
 
 #contact {
@@ -185,7 +223,7 @@ section {
 
 .email-button {
   color: #FFFFFF;
-  background-color: #083D77;
+  background-color: #001226;
   border-radius: 0.5em;
   font-size: 1.2em;
   padding: 0.5em 2em 0.5em 2em;
@@ -263,10 +301,13 @@ footer {
     -ms-grid-column-span: 10;
     grid-column: 2 / 12;
   }
-  #projects p {
+  #projects .projects-box {
     -ms-grid-column: 2;
     -ms-grid-column-span: 10;
     grid-column: 2 / 12;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "image" "desc";
   }
   #contact {
     -ms-grid-column: 1;

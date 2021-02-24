@@ -1,7 +1,10 @@
+$oxford-blue: #001226;
 $indigo-dye: #083D77;
+$queen-blue: #4C6085;
 $light-blue: #B0D0D3;
 $raisin-black: #2E2C2F;
 $white: #FFFFFF;
+$black: #000000;
 
 html > body {
   margin: 0;
@@ -123,8 +126,40 @@ section {
   grid-column: 3 / 11;
 }
 
-#projects p {
+.projects-box {
+  background-color: $queen-blue;
+  border-radius: 0.5em;
+  color: $black;
   grid-column: 3 / 11;
+  padding: 1em;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "image desc";
+}
+
+.projects-box-image {
+  grid-area: image;
+}
+
+.projects-box-image img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.projects-box-desc {
+  grid-area: desc;
+  padding: 0 1em 0 1em;
+}
+
+.projects-box-desc a {
+  color: $black;
+  text-decoration: none;
+}
+
+.projects-box-desc a:hover {
+  text-decoration: underline;
 }
 
 #contact {
@@ -143,7 +178,7 @@ section {
 
 .email-button {
   color: $white;
-  background-color: $indigo-dye;
+  background-color: $oxford-blue;
   border-radius: 0.5em;
   font-size: 1.2em;
   padding: 0.5em 2em 0.5em 2em;
@@ -212,8 +247,13 @@ footer {
     grid-column: 2 / 12;
   }
 
-  #projects p {
+  #projects .projects-box {
     grid-column: 2 / 12;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "image"
+      "desc"
+    ;
   }
 
   #contact {
