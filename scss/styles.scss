@@ -1,8 +1,8 @@
 $oxford-blue: #001226;
 $indigo-dye: #083D77;
-$queen-blue: #4C6085;
 $light-blue: #B0D0D3;
 $raisin-black: #2E2C2F;
+$light-gray: #D1D5DE;
 $white: #FFFFFF;
 $black: #000000;
 
@@ -127,7 +127,7 @@ section {
 }
 
 .projects-box {
-  background-color: $queen-blue;
+  background-color: $light-gray;
   border-radius: 0.5em;
   color: $black;
   grid-column: 3 / 11;
