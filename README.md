@@ -14,3 +14,4 @@ A basic portfolio website built in HTML, then hosted by GitHub Pages. The SCSS i
 - [ ] Social media links
 - [ ] More portfolio items
 - [ ] More interation with GitHub Pages for projects
+- [ ] Google Analytics
