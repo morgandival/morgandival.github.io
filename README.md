@@ -10,8 +10,10 @@ My portfolio website.
 A basic portfolio website built in HTML, then hosted by GitHub Pages. The SCSS is written then compiled to CSS, and CSS grids are used to position and style the various sections. The TypeScript is compiled to JavaScript that is used to dynamically produce the copyright year.
 
 ## Roadmap:
-
+### Planned:
 - [ ] Social media links
 - [ ] More portfolio items
 - [ ] More interation with GitHub Pages for projects
-- [ ] Google Analytics
+
+### Completed:
+- [x] Google Analytics
