@@ -1,9 +1,9 @@
 $oxford-blue: #001226;
-$indigo-dye: #083D77;
-$light-blue: #B0D0D3;
-$raisin-black: #2E2C2F;
-$light-gray: #D1D5DE;
-$white: #FFFFFF;
+$indigo-dye: #083d77;
+$light-blue: #b0d0d3;
+$raisin-black: #2e2c2f;
+$light-gray: #d1d5de;
+$white: #ffffff;
 $black: #000000;
 
 html > body {
@@ -47,8 +47,8 @@ header a:hover {
   padding-inline-start: 0;
 }
 
-#header-nav nav ul li{
-  display: inline;  
+#header-nav nav ul li {
+  display: inline;
   margin: 10px;
 }
 
@@ -112,7 +112,7 @@ section {
 }
 
 .skills-box li {
-  list-style-type: "✔️";
+  list-style-type: '✔️';
   padding-inline-start: 1ch;
   margin-top: 0.5em;
 }
@@ -136,7 +136,7 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-  grid-template-areas: "image desc";
+  grid-template-areas: 'image desc';
 }
 
 .projects-box-image {
@@ -202,7 +202,7 @@ footer {
   header {
     text-align: center;
   }
-  
+
   #header-title {
     grid-column: 1 / 13;
   }
@@ -233,7 +233,9 @@ footer {
     text-align: center;
   }
 
-  #skills-frontend, #skills-backend, #skills-other {
+  #skills-frontend,
+  #skills-backend,
+  #skills-other {
     grid-column: 2 / 12;
     margin: 0.5em 0 0.5em 0;
   }
@@ -251,9 +253,8 @@ footer {
     grid-column: 2 / 12;
     grid-template-columns: 1fr;
     grid-template-areas:
-      "image"
-      "desc"
-    ;
+      'image'
+      'desc';
   }
 
   #contact {
