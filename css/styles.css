@@ -5,8 +5,8 @@ html > body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr) [12];
-  grid-template-columns: repeat(12, 1fr);
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
 }
 
 header {
@@ -17,8 +17,8 @@ header {
   grid-column: 1 / 13;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr) [12];
-  grid-template-columns: repeat(12, 1fr);
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
   font-size: 1.1em;
   margin-bottom: 1em;
 }
@@ -40,8 +40,8 @@ header a:hover {
 
 #header-nav {
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   text-align: right;
   -ms-grid-column: 7;
   -ms-grid-column-span: 4;
@@ -50,7 +50,7 @@ header a:hover {
 
 #header-nav nav ul {
   -webkit-padding-start: 0;
-  padding-inline-start: 0;
+          padding-inline-start: 0;
 }
 
 #header-nav nav ul li {
@@ -68,8 +68,8 @@ section {
 #about {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr) [12];
-  grid-template-columns: repeat(12, 1fr);
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
 }
 
 #about-text {
@@ -77,8 +77,8 @@ section {
   -ms-grid-column-span: 5;
   grid-column: 3 / 8;
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   font-size: 1.6em;
 }
 
@@ -98,8 +98,8 @@ section {
 #skills {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr) [12];
-  grid-template-columns: repeat(12, 1fr);
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
 }
 
 #skills-tagline {
@@ -140,15 +140,15 @@ section {
 .skills-box li {
   list-style-type: '✔️';
   -webkit-padding-start: 1ch;
-  padding-inline-start: 1ch;
+          padding-inline-start: 1ch;
   margin-top: 0.5em;
 }
 
 #projects {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr) [12];
-  grid-template-columns: repeat(12, 1fr);
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
 }
 
 #projects-tagline {
@@ -167,11 +167,11 @@ section {
   padding: 1em;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr) [2];
-  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: auto;
-  grid-template-rows: auto;
-  grid-template-areas: 'image desc';
+      grid-template-rows: auto;
+      grid-template-areas: 'image desc';
 }
 
 .projects-box-image {
@@ -204,8 +204,8 @@ section {
 #contact {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr) [12];
-  grid-template-columns: repeat(12, 1fr);
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
 }
 
 #contact-tagline {
@@ -214,20 +214,32 @@ section {
   grid-column: 3 / 11;
 }
 
-#contact-email {
+#contact-buttons {
   -ms-grid-column: 3;
   -ms-grid-column-span: 8;
   grid-column: 3 / 11;
   margin: 1em 0 1em 0;
 }
 
-.email-button {
+.contact-button {
   color: #ffffff;
-  background-color: #001226;
   border-radius: 0.5em;
   font-size: 1.2em;
   padding: 0.5em 2em 0.5em 2em;
   text-decoration: none;
+}
+
+.email-button {
+  background-color: #2e2c2f;
+  color: #ffffff;
+}
+
+.linkedin-button {
+  background-color: #083d77;
+}
+
+.twitter-button {
+  background-color: #001226;
 }
 
 .email-button:hover {
@@ -308,10 +320,8 @@ footer {
     -ms-grid-column-span: 10;
     grid-column: 2 / 12;
     -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      'image'
-      'desc';
+        grid-template-columns: 1fr;
+        grid-template-areas: 'image' 'desc';
   }
   #contact {
     -ms-grid-column: 1;
@@ -328,6 +338,10 @@ footer {
     -ms-grid-column: 2;
     -ms-grid-column-span: 10;
     grid-column: 2 / 12;
+  }
+  .contact-button {
+    display: block;
+    margin: 0.5em;
   }
 }
 /*# sourceMappingURL=styles.css.map */

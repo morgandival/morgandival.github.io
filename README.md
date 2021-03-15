@@ -5,16 +5,16 @@ My portfolio website.
 
 ## How It's Made:
 
-**Tech used:** HTML, CSS/SCSS, JavaScript/TypeScript, GitHub Pages
+**Tech used:** HTML, CSS/SCSS, JavaScript/TypeScript, GitHub Pages, Bootstrap Icons
 
 A basic portfolio website built in HTML, then hosted by GitHub Pages. The SCSS is written then compiled to CSS, and CSS grids are used to position and style the various sections. The TypeScript is compiled to JavaScript that is used to dynamically produce the copyright year.
 
 ## Roadmap:
 
 ### Planned:
-- [ ] Social media links
 - [ ] More portfolio items
 - [ ] More interation with GitHub Pages for projects
 
 ### Completed:
+- [x] Social media links
 - [x] Google Analytics

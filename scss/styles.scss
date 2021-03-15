@@ -171,18 +171,30 @@ section {
   grid-column: 3 / 11;
 }
 
-#contact-email {
+#contact-buttons {
   grid-column: 3 / 11;
   margin: 1em 0 1em 0;
 }
 
-.email-button {
+.contact-button {
   color: $white;
-  background-color: $oxford-blue;
   border-radius: 0.5em;
   font-size: 1.2em;
   padding: 0.5em 2em 0.5em 2em;
   text-decoration: none;
+}
+
+.email-button {
+  background-color: $raisin-black;
+  color: $white;
+}
+
+.linkedin-button {
+  background-color: $indigo-dye;
+}
+
+.twitter-button {
+  background-color: $oxford-blue;
 }
 
 .email-button:hover {
@@ -268,5 +280,10 @@ footer {
 
   #contact-email {
     grid-column: 2 / 12;
+  }
+
+  .contact-button {
+    display: block;
+    margin: 0.5em;
   }
 }
