@@ -165,6 +165,7 @@ section {
   -ms-grid-column-span: 8;
   grid-column: 3 / 11;
   padding: 1em;
+  margin-bottom: 1em;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -229,6 +230,10 @@ section {
   text-decoration: none;
 }
 
+.contact-button:hover {
+  text-decoration: underline;
+}
+
 .email-button {
   background-color: #2e2c2f;
   color: #ffffff;
@@ -240,10 +245,6 @@ section {
 
 .twitter-button {
   background-color: #001226;
-}
-
-.email-button:hover {
-  text-decoration: underline;
 }
 
 footer {
@@ -309,6 +310,9 @@ footer {
     -ms-grid-column-span: 12;
     grid-column: 1 / 13;
     text-align: center;
+  }
+  #projects p {
+    text-align: left;
   }
   #projects-tagline {
     -ms-grid-column: 2;

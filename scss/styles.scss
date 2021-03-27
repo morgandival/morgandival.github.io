@@ -132,7 +132,7 @@ section {
   color: $black;
   grid-column: 3 / 11;
   padding: 1em;
-
+  margin-bottom: 1em;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
@@ -184,6 +184,10 @@ section {
   text-decoration: none;
 }
 
+.contact-button:hover {
+  text-decoration: underline;
+}
+
 .email-button {
   background-color: $raisin-black;
   color: $white;
@@ -195,10 +199,6 @@ section {
 
 .twitter-button {
   background-color: $oxford-blue;
-}
-
-.email-button:hover {
-  text-decoration: underline;
 }
 
 footer {
@@ -255,6 +255,9 @@ footer {
   #projects {
     grid-column: 1 / 13;
     text-align: center;
+    p {
+      text-align: left;
+    }
   }
 
   #projects-tagline {
