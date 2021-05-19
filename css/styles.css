@@ -234,7 +234,9 @@ section {
   text-decoration: underline;
 }
 
-.email-button {
+.email-button,
+.github-button,
+.blog-button {
   background-color: #2e2c2f;
   color: #ffffff;
 }
@@ -245,11 +247,6 @@ section {
 
 .twitter-button {
   background-color: #001226;
-}
-
-.blog-button {
-  background-color: #2e2c2f;
-  color: #ffffff;
 }
 
 footer {

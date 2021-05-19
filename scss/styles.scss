@@ -188,7 +188,9 @@ section {
   text-decoration: underline;
 }
 
-.email-button {
+.email-button,
+.github-button,
+.blog-button {
   background-color: $raisin-black;
   color: $white;
 }
@@ -199,11 +201,6 @@ section {
 
 .twitter-button {
   background-color: $oxford-blue;
-}
-
-.blog-button {
-  background-color: $raisin-black;
-  color: $white;
 }
 
 footer {
