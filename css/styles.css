@@ -226,7 +226,7 @@ section {
   color: #ffffff;
   border-radius: 0.5em;
   font-size: 1.2em;
-  padding: 0.5em 2em 0.5em 2em;
+  padding: 0.5em 1.5em 0.5em 1.5em;
   text-decoration: none;
 }
 
@@ -238,7 +238,6 @@ section {
 .github-button,
 .blog-button {
   background-color: #2e2c2f;
-  color: #ffffff;
 }
 
 .linkedin-button {
@@ -340,14 +339,14 @@ footer {
     -ms-grid-column-span: 10;
     grid-column: 2 / 12;
   }
-  #contact-email {
+  #contact-buttons {
     -ms-grid-column: 2;
     -ms-grid-column-span: 10;
     grid-column: 2 / 12;
   }
   .contact-button {
     display: block;
-    margin: 0.5em;
+    margin: 0.5em 0 0.5em 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */
