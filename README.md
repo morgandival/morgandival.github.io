@@ -14,6 +14,7 @@ A basic portfolio website built in HTML and hosted by GitHub Pages. The SCSS is 
 ### Planned:
 - [ ] More portfolio items
 - [ ] More interation with GitHub Pages for projects
+- [ ] Move to JS framework (Gatsby? Next?)
 
 ### Completed:
 - [x] Social media links
