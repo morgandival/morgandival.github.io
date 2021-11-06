@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "My portfolio website.",
   "main": "index.js",
-  "dependencies": {},
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.23.0",
     "@typescript-eslint/parser": "^4.23.0",
-    "eslint": "^7.26.0"
+    "eslint": "^7.26.0",
+    "gh-pages": "^3.2.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
