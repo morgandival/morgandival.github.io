@@ -1,16 +1,5 @@
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnPaste": false,
-  "editor.formatOnSave": true,
-  "liveSassCompile.settings.formats": [
-    {
-      "format": "expanded",
-      "extensionName": ".css",
-      "savePath": "/css"
-    }
-  ],
-  "liveSassCompile.settings.excludeList": [
-    "**/node_modules/**",
-    ".vscode/**"
-  ]
+  "editor.formatOnSave": true
 }
