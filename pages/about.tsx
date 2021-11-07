@@ -1,9 +1,13 @@
 import type { NextPage } from 'next';
+import Head from 'next/head';
 
 const About: NextPage = () => {
   return (
     <div>
-      <h2>index.js</h2>
+      <Head>
+        <title>Morgan Di Val - About</title>
+      </Head>
+      <h2>about.js</h2>
     </div>
   );
 };
