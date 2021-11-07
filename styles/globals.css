@@ -9,6 +9,6 @@
   }
 
   #__next {
-    @apply grid;
+    @apply grid h-screen;
   }
 }
