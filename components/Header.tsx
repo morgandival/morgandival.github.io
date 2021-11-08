@@ -2,15 +2,15 @@ import Link from 'next/link';
 
 const Header = () => {
   return (
-    <header className="grid grid-cols-12 content-center">
-      <div className="col-start-3 col-end-7 py-5 text-4xl font-bold">
-        <Link href="/">
-          <a>
-            <h1>Morgan Di Val</h1>
-          </a>
-        </Link>
+    <header className="grid grid-cols-12 items-center h-24">
+      <div className="col-start-3 col-end-7 text-4xl font-bold">
+        <h1>
+          <Link href="/">
+            <a>Morgan Di Val</a>
+          </Link>
+        </h1>
       </div>
-      <div className="col-start-7 col-end-11 py-5 text-xl text-right">
+      <div className="col-start-7 col-end-11 text-xl text-right">
         <ul className="">
           <li className="inline-block m-3">
             <Link href="/about">
