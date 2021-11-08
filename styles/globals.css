@@ -11,4 +11,8 @@
   #__next {
     @apply grid grid-cols-12;
   }
+
+  header {
+    @apply col-span-full bg-indigo-dye text-white;
+  }
 }

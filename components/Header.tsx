@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Header = () => {
   return (
-    <header className="h-24 col-start-1 col-end-13 grid grid-cols-12 bg-indigo-dye text-white content-center">
+    <header className="grid grid-cols-12 content-center">
       <div className="col-start-3 col-end-7 py-5 text-4xl font-bold">
         <Link href="/">
           <a>
