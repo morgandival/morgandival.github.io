@@ -5,9 +5,7 @@ function Layout({ children }: { children: JSX.Element }) {
   return (
     <>
       <Header />
-      <main className="col-start-1 col-end-13 grid grid-cols-12">
-        {children}
-      </main>
+      <main>{children}</main>
       <Footer />
     </>
   );
