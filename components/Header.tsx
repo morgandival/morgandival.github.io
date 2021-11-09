@@ -12,17 +12,17 @@ const Header = () => {
       </div>
       <div className="col-span-full sm:col-start-7 sm:col-end-12 lg:col-end-11 text-xl text-center sm:text-right">
         <ul>
-          <li className="inline-block m-3">
+          <li className="inline-block m-4">
             <Link href="/about">
               <a>About</a>
             </Link>
           </li>
-          <li className="inline-block m-3">
+          <li className="inline-block m-4">
             <Link href="/">
               <a>Projects</a>
             </Link>
           </li>
-          <li className="inline-block m-3">
+          <li className="inline-block m-4 lg:mr-0">
             <Link href="/">
               <a>Contact</a>
             </Link>
