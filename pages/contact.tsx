@@ -1,14 +1,14 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 
-const About: NextPage = () => {
+const Contact = () => {
   return (
     <div>
       <Head>
-        <title>Morgan Di Val - About</title>
+        <title>Morgan Di Val - Contact</title>
       </Head>
     </div>
   );
 };
 
-export default About;
+export default Contact;

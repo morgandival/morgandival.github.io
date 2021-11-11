@@ -18,12 +18,12 @@ const Header = () => {
             </Link>
           </li>
           <li className="inline-block m-4">
-            <Link href="/">
+            <Link href="/projects">
               <a>Projects</a>
             </Link>
           </li>
           <li className="inline-block m-4 lg:mr-0">
-            <Link href="/">
+            <Link href="/contact">
               <a>Contact</a>
             </Link>
           </li>
