@@ -7,6 +7,7 @@ const Projects = () => {
     <div>
       <Head>
         <title>Morgan Di Val - Projects</title>
+        <Card />
       </Head>
     </div>
   );
