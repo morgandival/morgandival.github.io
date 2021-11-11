@@ -7,8 +7,8 @@ const Projects = () => {
     <div>
       <Head>
         <title>Morgan Di Val - Projects</title>
-        <Card />
       </Head>
+      <Card title="FooBar" />
     </div>
   );
 };
