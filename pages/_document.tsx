@@ -3,7 +3,9 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 const MyDocument = () => {
   return (
     <Html lang="en">
-      <Head></Head>
+      <Head>
+        <meta name="author" content="Morgan Di Val" />
+      </Head>
       <body>
         <Main />
         <NextScript />
