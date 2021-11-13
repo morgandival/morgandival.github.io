@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const Header = () => {
+const Header = (): JSX.Element => {
   return (
     <header>
       <div className="col-span-full sm:col-start-2 sm:col-end-7 lg:col-start-3 text-center sm:text-left text-4xl font-bold">

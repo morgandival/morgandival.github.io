@@ -1,7 +1,7 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-function Layout({ children }: { children: JSX.Element }) {
+const Layout = ({ children }: { children: JSX.Element }): JSX.Element => {
   return (
     <>
       <Header />
@@ -9,6 +9,6 @@ function Layout({ children }: { children: JSX.Element }) {
       <Footer />
     </>
   );
-}
+};
 
 export default Layout;
