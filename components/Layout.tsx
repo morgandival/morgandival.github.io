@@ -5,7 +5,7 @@ const Layout = ({ children }: { children: JSX.Element }): JSX.Element => {
   return (
     <div className="flex flex-col h-screen">
       <Header />
-      <main>{children}</main>
+      <main className="h-full">{children}</main>
       <Footer />
     </div>
   );
