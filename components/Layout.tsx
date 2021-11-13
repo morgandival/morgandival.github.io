@@ -3,7 +3,7 @@ import Footer from '../components/Footer';
 
 const Layout = ({ children }: { children: JSX.Element }): JSX.Element => {
   return (
-    <div>
+    <div className="flex flex-col h-screen">
       <Header />
       <main className="h-full">{children}</main>
       <Footer />
