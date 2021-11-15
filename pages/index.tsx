@@ -5,7 +5,7 @@ import heroImage from '../public/Morgan.jpg';
 
 const Home: NextPage = () => {
   return (
-    <div className="grid grid-cols-12 col-span-full items-center my-auto gap-y-4">
+    <div className="grid grid-cols-12 col-span-full items-center my-4 py-4">
       <Head>
         <title>Morgan Di Val - Home</title>
       </Head>
@@ -15,8 +15,8 @@ const Home: NextPage = () => {
           in Sydney Australia.
         </h2>
       </div>
-      <div className="col-start-2 col-end-12 sm:col-start-8 sm:col-end-11 md:col-end-12 lg:col-end-11 text-right">
-        <Image src={heroImage} alt="Morgan" className="rounded-full ml-4" />
+      <div className="col-start-2 col-end-12 sm:col-start-8 sm:col-end-11 md:col-end-12 lg:col-end-11">
+        <Image src={heroImage} alt="Morgan" className="rounded-full" />
       </div>
     </div>
   );
