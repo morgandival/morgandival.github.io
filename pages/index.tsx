@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import heroImage from '../public/Morgan.jpg';
 
-const Home: NextPage = () => {
+const Index: NextPage = () => {
   return (
     <div className="grid grid-cols-12 col-span-full items-center my-4 py-4">
       <Head>
@@ -22,4 +22,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Index;
