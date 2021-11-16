@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Card from '../components/Card';
+import ProjectCard from '../components/ProjectCard';
 
 const Projects: NextPage = () => {
   return (
@@ -8,7 +8,7 @@ const Projects: NextPage = () => {
       <Head>
         <title>Morgan Di Val - Projects</title>
       </Head>
-      <Card title="FooBar" />
+      <ProjectCard title="FooBar" description={['alpha', 'beta']} image="" />
     </div>
   );
 };
