@@ -17,12 +17,12 @@ const ProjectCard = (props: Props) => {
 
   return (
     <div className="col-start-2 col-end-12 lg:col-start-3 lg:col-end-11 my-4 p-4 bg-light-gray rounded-lg text-center flex flex-grow flex-wrap">
-      <div className="flex-grow">
+      <div className="flex-grow lg:text-left">
         <h3 className="text-xl font-bold">{props.title}</h3>
         {output}
         <p>Insert image here.</p>
       </div>
-      <div>
+      <div className="">
         <Image
           src={projectCardImage}
           alt={props.title}
