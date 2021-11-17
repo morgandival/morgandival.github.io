@@ -9,9 +9,12 @@ const Projects: NextPage = () => {
         <title>Morgan Di Val - Projects</title>
       </Head>
       <ProjectCard
-        title="FooBar"
-        description={['alpha', 'beta']}
-        image="placeholder"
+        title="Till Counter"
+        description={[
+          'This should be a paragraph.',
+          'This should also be a paragraph.',
+        ]}
+        image="Morgan"
       />
     </div>
   );
