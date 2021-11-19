@@ -11,10 +11,12 @@ const Projects: NextPage = () => {
       <ProjectCard
         title="Till Counter"
         description={[
-          'This should be a paragraph.',
-          'This should also be a paragraph.',
+          'This project is a basic React App that lets you count all of the money by adding a series of input fields together and displaying a total.',
+          'Tech used: React, TypeScript',
         ]}
-        image="Morgan"
+        image="/till-counter.jpg"
+        liveLink="https://morgandival.github.io/till-counter"
+        repoLink="https://github.com/morgandival/till-counter"
       />
     </div>
   );
