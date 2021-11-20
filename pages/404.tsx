@@ -1,6 +1,6 @@
-import NextPage from 'next';
+import type { NextPage } from 'next';
 
-const NotFound = () => {
+const NotFound: NextPage = () => {
   return <div>This is not the web page you are looking for.</div>;
 };
 
