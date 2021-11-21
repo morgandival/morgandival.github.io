@@ -18,7 +18,7 @@ const ProjectCard = (props: Props) => {
 
   return (
     <div className="col-start-2 col-end-12 lg:col-start-3 lg:col-end-11 my-4 p-4 bg-light-gray rounded-lg text-center flex flex-wrap md:flex-nowrap lg:flex-nowrap">
-      <div className="flex-grow md:text-left lg:text-left p-4">
+      <div className="flex-grow md:text-left lg:text-left p-4 h-auto w-full md:w-3/5 lg:w-3/5">
         <h3 className="text-xl font-bold">{props.title}</h3>
         {descriptionOutput}
         <ul>
@@ -30,7 +30,7 @@ const ProjectCard = (props: Props) => {
           </li>
         </ul>
       </div>
-      <div className="relative h-96 w-full lg:h-full lg:w-4/6">
+      <div className="relative w-full md:w-2/5 lg:w-2/5">
         <Image
           src={props.image}
           alt={props.title}
