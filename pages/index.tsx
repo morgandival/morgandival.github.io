@@ -5,11 +5,11 @@ import heroImage from '../public/morgan.jpg';
 
 const Index: NextPage = () => {
   return (
-    <div className="grid grid-cols-12 col-span-full items-center my-4 py-4">
+    <div className="grid grid-cols-12 col-span-full items-center m-auto">
       <Head>
         <title>Morgan Di Val - Home</title>
       </Head>
-      <div className="col-start-2 col-end-12 sm:col-start-2 sm:col-end-8 lg:col-start-3 md:text-left m-4">
+      <div className="col-start-2 col-end-12 sm:col-start-2 sm:col-end-8 lg:col-start-3 md:text-left">
         <h2 className="text-2xl mr-4">
           G&apos;day! I&apos;m Morgan, a web developer and content writer based
           in Sydney Australia.
