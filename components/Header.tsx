@@ -22,7 +22,7 @@ const Header = (): JSX.Element => {
               <a>Projects</a>
             </Link>
           </li>
-          <li className="inline-block m-4 lg:mr-0">
+          <li className="inline-block m-4 md:mr-0 lg:mr-0">
             <Link href="/contact">
               <a>Contact</a>
             </Link>
