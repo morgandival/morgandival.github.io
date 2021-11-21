@@ -10,7 +10,7 @@ const Index: NextPage = () => {
         <title>Morgan Di Val - Home</title>
       </Head>
       <div className="col-start-2 col-end-12 sm:col-start-2 sm:col-end-8 lg:col-start-3 md:text-left">
-        <h2 className="text-2xl mr-4">
+        <h2 className="text-2xl my-4 mr-4">
           G&apos;day! I&apos;m Morgan, a web developer and content writer based
           in Sydney Australia.
         </h2>
