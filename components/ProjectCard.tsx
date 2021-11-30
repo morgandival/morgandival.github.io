@@ -4,9 +4,7 @@ import Image from 'next/image';
 type Props = {
   title: string;
   description: Array<string>;
-  image: string;
-  liveLink: string;
-  repoLink: string;
+  slug: string;
 };
 
 const ProjectCard = (props: Props) => {
@@ -23,16 +21,20 @@ const ProjectCard = (props: Props) => {
         {descriptionOutput}
         <ul>
           <li className="my-2">
-            <Link href={props.liveLink}>Live Project</Link>
+            <Link href={`https://morgandival.github.io/${props.slug}`}>
+              Live Project
+            </Link>
           </li>
           <li className="my-2">
-            <Link href={props.repoLink}>Github Repository</Link>
+            <Link href={`https://github.com/morgandival/${props.slug}`}>
+              Github Repository
+            </Link>
           </li>
         </ul>
       </div>
       <div className="relative w-full md:w-2/5 lg:w-2/5">
         <Image
-          src={props.image}
+          src={`/${props.slug}.jpg`}
           alt={props.title}
           layout="fill"
           objectFit="contain"
