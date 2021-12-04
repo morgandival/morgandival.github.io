@@ -23,7 +23,7 @@ const Projects: NextPage = () => {
     },
   ];
 
-  const cardOutput: Array<JSX.Element> = [];
+  const cardOutput: JSX.Element[] = [];
 
   projectCards.forEach((card) => {
     cardOutput.push(
