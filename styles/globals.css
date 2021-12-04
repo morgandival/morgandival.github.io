@@ -28,3 +28,5 @@
     @apply my-2;
   }
 }
+
+@import url('../node_modules/bootstrap-icons/font/bootstrap-icons.css');
