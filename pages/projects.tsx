@@ -36,7 +36,7 @@ const Projects: NextPage = () => {
   });
 
   return (
-    <div className="grid col-span-full grid-cols-12 my-4">
+    <div className="content">
       <Head>
         <title>Morgan Di Val - Projects</title>
       </Head>

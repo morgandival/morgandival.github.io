@@ -5,7 +5,7 @@ import heroImage from '../public/morgan.jpg';
 
 const Index: NextPage = () => {
   return (
-    <div className="grid grid-cols-12 col-span-full items-center m-auto">
+    <div className="content items-center">
       <Head>
         <title>Morgan Di Val - Home</title>
       </Head>
