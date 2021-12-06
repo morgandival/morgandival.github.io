@@ -16,6 +16,10 @@
     @apply bg-white text-black;
   }
 
+  .content {
+    @apply grid grid-cols-12 col-span-full my-auto;
+  }
+
   footer {
     @apply grid grid-cols-12 h-24 items-center bg-raisin-black text-white;
   }
