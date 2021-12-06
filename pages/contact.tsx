@@ -40,7 +40,7 @@ const Contact: NextPage = () => {
   contactMethods.forEach((obj) => {
     outputContactMethods.push(
       <a
-        className={`block rounded-lg text-xl py-2 px-6 ${obj.colour} text-white m-2`}
+        className={`block rounded-lg text-xl py-2 px-6 ${obj.colour} text-white m-4`}
         href={obj.link}
       >
         <i className={'bi ' + obj.icon}></i>
