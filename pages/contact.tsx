@@ -50,7 +50,7 @@ const Contact: NextPage = () => {
   });
 
   return (
-    <div className="grid col-span-full grid-cols-12 my-auto">
+    <div className="content">
       <Head>
         <title>Morgan Di Val - Contact</title>
       </Head>
