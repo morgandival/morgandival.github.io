@@ -8,7 +8,7 @@ type Props = {
 };
 
 const ProjectCard = (props: Props) => {
-  const descriptionOutput: Array<JSX.Element> = [];
+  const descriptionOutput: JSX.Element[] = [];
 
   props.description.forEach((value) => {
     descriptionOutput.push(<p className="my-2">{value}</p>);
