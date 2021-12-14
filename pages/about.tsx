@@ -18,7 +18,7 @@ const About: NextPage = () => {
   });
 
   return (
-    <div className="content">
+    <div className="content text-xl">
       <Head>
         <title>Morgan Di Val - About</title>
       </Head>
