@@ -5,6 +5,7 @@ const About: NextPage = () => {
   const aboutText = [
     'This is some dummy place holder text.',
     'This is some more dummy place holder text.',
+    'This is another bit of dummy place holder text.',
   ];
 
   const outputAboutText: JSX.Element[] = [];
