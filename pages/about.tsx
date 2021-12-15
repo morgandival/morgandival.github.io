@@ -23,6 +23,9 @@ const About: NextPage = () => {
       <Head>
         <title>Morgan Di Val - About</title>
       </Head>
+      <h2 className="col-start-2 col-end-12 lg:col-start-3 lg:col-end-11 text-left text-3xl my-4">
+        About
+      </h2>
       {outputAboutText}
     </div>
   );
