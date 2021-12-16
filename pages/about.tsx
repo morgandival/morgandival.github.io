@@ -3,9 +3,10 @@ import Head from 'next/head';
 
 const About: NextPage = () => {
   const aboutText = [
-    'This is some dummy place holder text.',
-    'This is some more dummy place holder text.',
-    'This is another bit of dummy place holder text.',
+    `I'm a web developer based in Sydney, Australia.`,
+    `I'm proficient with HTML, CSS, JavaScript, PHP and SQL.`,
+    `I love the creative and technical challenges inherent in web development.`,
+    `I'm always learning about new things.`,
   ];
 
   const outputAboutText: JSX.Element[] = [];
@@ -24,7 +25,7 @@ const About: NextPage = () => {
         <title>Morgan Di Val - About</title>
       </Head>
       <h2 className="col-start-2 col-end-12 lg:col-start-3 lg:col-end-11 text-center lg:text-left text-3xl font-bold my-4">
-        About
+        A little about me
       </h2>
       {outputAboutText}
     </div>
