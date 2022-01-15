@@ -11,7 +11,8 @@
     "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "bootstrap-icons": "^1.7.2",
