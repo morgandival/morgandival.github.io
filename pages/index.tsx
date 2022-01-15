@@ -14,16 +14,14 @@ const Index: NextPage = () => {
           in Sydney Australia.
         </h2>
       </div>
-      <div className="col-start-2 col-end-12 sm:col-start-8 sm:col-end-11 md:col-end-12 lg:col-end-11">
-        <div className="relative m-auto w-72 h-72">
-          <Image
-            src={`/morgan.jpg`}
-            alt="Morgan"
-            layout="fill"
-            objectFit="fill"
-            className="rounded-full"
-          />
-        </div>
+      <div className="col-start-2 col-end-12 sm:col-start-8 sm:col-end-11 md:col-end-12 lg:col-end-11 text-center md:text-right lg:text-right">
+        <Image
+          src={`/morgan.jpg`}
+          alt="Morgan"
+          width={350}
+          height={350}
+          className="m-auto rounded-full"
+        />
       </div>
     </div>
   );
