@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Image from 'next/image';
 import heroImage from '../public/morgan.jpg';
 
 const Index: NextPage = () => {
@@ -15,7 +16,7 @@ const Index: NextPage = () => {
         </h2>
       </div>
       <div className="col-start-2 col-end-12 sm:col-start-8 sm:col-end-11 md:col-end-12 lg:col-end-11">
-        <img src={heroImage} alt="Morgan" className="rounded-full" />
+        <Image src={heroImage} alt="Morgan" className="rounded-full" />
       </div>
     </div>
   );
