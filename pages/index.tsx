@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
+import morgan from '../public/morgan.jpg';
 
 const Index: NextPage = () => {
   return (
@@ -16,7 +17,7 @@ const Index: NextPage = () => {
       </div>
       <div className="col-start-2 col-end-12 sm:col-start-8 sm:col-end-11 md:col-end-12 lg:col-end-11 text-center md:text-right lg:text-right">
         <Image
-          src={`/morgan.jpg`}
+          src={morgan}
           alt="Morgan"
           width={350}
           height={350}
