@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
-import morgan from '../public/morgan.jpg';
+import morgan from '/public/morgan.jpg';
 
 const Index: NextPage = () => {
   return (
