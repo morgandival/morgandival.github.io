@@ -3,6 +3,8 @@ import Head from 'next/head';
 import Image from 'next/image';
 
 const Index: NextPage = () => {
+  const heroImage = 'morgan.jpg';
+
   return (
     <div className="content items-center">
       <Head>
@@ -15,10 +17,9 @@ const Index: NextPage = () => {
         </h2>
       </div>
       <div className="col-start-2 col-end-12 sm:col-start-8 sm:col-end-11 md:col-end-12 lg:col-end-11 text-center md:text-right lg:text-right">
-        <Image
-          src={'/morgan.jpg'}
+        <img
+          src={`/${heroImage}`}
           alt="Morgan"
-          layout="fixed"
           width={350}
           height={350}
           className="m-auto rounded-full"
