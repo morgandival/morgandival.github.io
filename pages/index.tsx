@@ -17,7 +17,7 @@ const Index: NextPage = () => {
         </h2>
       </div>
       <div className="col-start-2 col-end-12 sm:col-start-8 sm:col-end-11 md:col-end-12 lg:col-end-11 text-center md:text-right lg:text-right">
-        <img
+        <Image
           src={`/${heroImage}`}
           alt="Morgan"
           width={350}
