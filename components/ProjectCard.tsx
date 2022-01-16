@@ -20,14 +20,18 @@ const ProjectCard = (props: Props) => {
         <h3 className="text-xl font-bold">{props.title}</h3>
         {descriptionOutput}
         <ul>
-          <li className="my-2">
+          <li className="my-4">
             <Link href={`https://morgandival.github.io/${props.slug}`}>
-              Live Project
+              <a className="bg-raisin-black text-white rounded-lg py-2 px-6">
+                Live Project
+              </a>
             </Link>
           </li>
-          <li className="my-2">
+          <li className="my-4">
             <Link href={`https://github.com/morgandival/${props.slug}`}>
-              Github Repository
+              <a className="bg-raisin-black text-white rounded-lg py-2 px-6">
+                Github Repository
+              </a>
             </Link>
           </li>
         </ul>
