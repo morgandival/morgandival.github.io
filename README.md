@@ -2,6 +2,7 @@
 
 - Add content to about page.
 
-## Drafting
+## Things I've learned...
 
-So... This is some text.
+- Rebuilding my personal website using NextJS has been a fun and rewarding challenge.
+- It has prompted me to learn about Github Actions and CD/CI as well as the NextJS ecosystem.
