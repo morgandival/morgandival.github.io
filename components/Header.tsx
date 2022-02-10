@@ -1,10 +1,21 @@
-import MyLink from './MyLink';
+import { ReactChild } from 'react';
+import MyLink, { Props } from './MyLink';
 
 const links = [
-  { href: '/about', children: 'About' },
-  { href: '/projects', children: 'Projects' },
-  { href: '/contact', children: 'Contact' },
+  { href: '/about', children: 'About', styles: 'inline-block m-4' },
+  { href: '/projects', children: 'Projects', styles: 'inline-block m-4' },
+  { href: '/contact', children: 'Contact', styles: 'inline-block m-4 lg:mr-0' },
 ];
+
+const output: Array<ReactChild> = [];
+
+links.forEach((link) => {
+  output.push(
+    <li className={link.styles}>
+      <MyLink href={link.href}>{link.children}</MyLink>
+    </li>
+  );
+});
 
 const Header = (): JSX.Element => {
   return (
@@ -15,16 +26,7 @@ const Header = (): JSX.Element => {
         </h1>
       </div>
       <div className="col-span-full sm:col-start-7 sm:col-end-12 lg:col-end-11 text-xl text-center sm:text-right">
-        <ul>
-          {links.forEach((link) => {
-            return (
-              <MyLink href={link.href} className="inline-block m-4">
-                {link.children}
-              </MyLink>
-            );
-          })}
-          ;
-        </ul>
+        <ul>{output}</ul>
       </div>
     </header>
   );
