@@ -15,7 +15,7 @@ const output: Array<ReactChild> = [];
 
 links.forEach((link) => {
   output.push(
-    <li className={link.styles}>
+    <li className={link.styles} key={`link-${links.indexOf(link)}`}>
       <MyLink href={link.href}>{link.children}</MyLink>
     </li>
   );

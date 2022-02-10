@@ -9,6 +9,9 @@ describe('Header', () => {
       name: /Morgan Di Val/i,
     });
 
+    const link = screen.getByText('About');
+
     expect(heading).toBeInTheDocument();
+    expect(link).toBeInTheDocument();
   });
 });
