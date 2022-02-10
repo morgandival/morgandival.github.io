@@ -14,7 +14,7 @@ const Hero = (props: Props): JSX.Element => {
       <div className="col-start-2 col-end-12 sm:col-start-8 sm:col-end-11 md:col-end-12 lg:col-end-11 text-center md:text-right lg:text-right">
         <Image
           src={`${props.heroImage}.jpg`}
-          alt="Morgan"
+          alt={props.heroImage}
           width={350}
           height={350}
           className="m-auto rounded-full"

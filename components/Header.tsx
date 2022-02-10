@@ -4,7 +4,11 @@ import MyLink, { Props } from './MyLink';
 const links = [
   { href: '/about', children: 'About', styles: 'inline-block m-4' },
   { href: '/projects', children: 'Projects', styles: 'inline-block m-4' },
-  { href: '/contact', children: 'Contact', styles: 'inline-block m-4 lg:mr-0' },
+  {
+    href: '/contact',
+    children: 'Contact',
+    styles: 'inline-block m-4 md:mr-0 lg:mr-0',
+  },
 ];
 
 const output: Array<ReactChild> = [];
