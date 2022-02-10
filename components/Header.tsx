@@ -1,32 +1,29 @@
-import Link from 'next/link';
+import MyLink from './MyLink';
+
+const links = [
+  { href: '/about', children: 'About' },
+  { href: '/projects', children: 'Projects' },
+  { href: '/contact', children: 'Contact' },
+];
 
 const Header = (): JSX.Element => {
   return (
     <header>
       <div className="col-span-full sm:col-start-2 sm:col-end-7 lg:col-start-3 text-center sm:text-left text-4xl font-bold">
         <h1 className="my-4">
-          <Link href="/">
-            <a>Morgan Di Val</a>
-          </Link>
+          <MyLink href="/">Morgan Di Val</MyLink>
         </h1>
       </div>
       <div className="col-span-full sm:col-start-7 sm:col-end-12 lg:col-end-11 text-xl text-center sm:text-right">
         <ul>
-          <li className="inline-block m-4">
-            <Link href="/about">
-              <a>About</a>
-            </Link>
-          </li>
-          <li className="inline-block m-4">
-            <Link href="/projects">
-              <a>Projects</a>
-            </Link>
-          </li>
-          <li className="inline-block m-4 md:mr-0 lg:mr-0">
-            <Link href="/contact">
-              <a>Contact</a>
-            </Link>
-          </li>
+          {links.forEach((link) => {
+            return (
+              <MyLink href={link.href} className="inline-block m-4">
+                {link.children}
+              </MyLink>
+            );
+          })}
+          ;
         </ul>
       </div>
     </header>
