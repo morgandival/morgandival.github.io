@@ -1,5 +1,5 @@
 import { ReactChild } from 'react';
-import MyLink, { Props } from './MyLink';
+import MyLink from './MyLink';
 
 const links = [
   { href: '/about', children: 'About', styles: 'inline-block m-4' },
