@@ -3,9 +3,9 @@ import Footer from '../components/Footer';
 
 const Layout = ({ children }: { children: JSX.Element }): JSX.Element => {
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex h-screen flex-col">
       <Header />
-      <main className="flex-grow flex flex-col">{children}</main>
+      <main className="flex flex-grow flex-col">{children}</main>
       <Footer />
     </div>
   );

@@ -24,12 +24,12 @@ links.forEach((link) => {
 const Header = (): JSX.Element => {
   return (
     <header>
-      <div className="col-span-full sm:col-start-2 sm:col-end-7 lg:col-start-3 text-center sm:text-left text-4xl font-bold">
+      <div className="col-span-full text-center text-4xl font-bold sm:col-start-2 sm:col-end-7 sm:text-left lg:col-start-3">
         <h1 className="my-4">
           <MyLink href="/">Morgan Di Val</MyLink>
         </h1>
       </div>
-      <div className="col-span-full sm:col-start-7 sm:col-end-12 lg:col-end-11 text-xl text-center sm:text-right">
+      <div className="col-span-full text-center text-xl sm:col-start-7 sm:col-end-12 sm:text-right lg:col-end-11">
         <ul>{output}</ul>
       </div>
     </header>

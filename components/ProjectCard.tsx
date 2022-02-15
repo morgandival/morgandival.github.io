@@ -15,21 +15,21 @@ const ProjectCard = (props: Props) => {
   });
 
   return (
-    <div className="col-start-2 col-end-12 lg:col-start-3 lg:col-end-11 my-4 p-4 bg-light-gray rounded-lg text-center flex flex-wrap md:flex-nowrap lg:flex-nowrap">
-      <div className="flex-grow md:text-left lg:text-left p-4 h-auto w-full md:w-3/5 lg:w-3/5">
+    <div className="col-start-2 col-end-12 my-4 flex flex-wrap rounded-lg bg-light-gray p-4 text-center md:flex-nowrap lg:col-start-3 lg:col-end-11 lg:flex-nowrap">
+      <div className="h-auto w-full flex-grow p-4 md:w-3/5 md:text-left lg:w-3/5 lg:text-left">
         <h3 className="text-xl font-bold">{props.title}</h3>
         {descriptionOutput}
         <ul>
           <li className="my-4">
             <Link href={`https://morgandival.github.io/${props.slug}`}>
-              <a className="bg-raisin-black text-white rounded-lg py-2 px-6">
+              <a className="rounded-lg bg-raisin-black py-2 px-6 text-white">
                 Live Project
               </a>
             </Link>
           </li>
           <li className="my-4">
             <Link href={`https://github.com/morgandival/${props.slug}`}>
-              <a className="bg-raisin-black text-white rounded-lg py-2 px-6">
+              <a className="rounded-lg bg-raisin-black py-2 px-6 text-white">
                 Github Repository
               </a>
             </Link>
