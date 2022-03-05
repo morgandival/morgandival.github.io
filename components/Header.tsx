@@ -23,7 +23,7 @@ links.forEach((link) => {
 
 const Header = (): JSX.Element => {
   return (
-    <header>
+    <header className="py-4">
       <div className="col-span-full text-center text-4xl font-bold sm:col-start-2 sm:col-end-7 sm:text-left lg:col-start-3">
         <h1 className="my-4">
           <MyLink href="/">Morgan Di Val</MyLink>
