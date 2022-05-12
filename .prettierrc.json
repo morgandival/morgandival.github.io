@@ -2,6 +2,7 @@
   "endOfLine": "crlf",
   "printWidth": 80,
   "semi": true,
+  "singleAttributePerLine": true,
   "singleQuote": true,
   "tabWidth": 2,
   "trailingComma": "es5",
