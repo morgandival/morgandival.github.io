@@ -2,8 +2,16 @@ import { ReactChild } from 'react';
 import MyLink from './MyLink';
 
 const links = [
-  { href: '/about', children: 'About', styles: 'inline-block m-4' },
-  { href: '/projects', children: 'Projects', styles: 'inline-block m-4' },
+  {
+    href: '/about',
+    children: 'About',
+    styles: 'inline-block m-4',
+  },
+  {
+    href: '/projects',
+    children: 'Projects',
+    styles: 'inline-block m-4',
+  },
   {
     href: '/contact',
     children: 'Contact',
