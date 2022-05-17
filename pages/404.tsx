@@ -8,11 +8,11 @@ const NotFound: NextPage = () => {
       <Head>
         <title>Morgan Di Val - Page not found</title>
       </Head>
-      <div className="col-start-2 col-end-12 lg:col-start-3 lg:col-end-11 text-2xl">
+      <div className="col-start-2 col-end-12 text-2xl lg:col-start-3 lg:col-end-11">
         <p className="my-8">This is not the page you are looking for.</p>
         <p className="my-8">
           <Link href="/">
-            <a className="bg-raisin-black text-white rounded-lg py-2 px-6">
+            <a className="rounded-lg bg-raisin-black py-2 px-6 text-white">
               Back to home
             </a>
           </Link>
