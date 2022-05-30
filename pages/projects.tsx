@@ -31,6 +31,7 @@ const Projects: NextPage = () => {
         title={card.title}
         description={card.description}
         slug={card.slug}
+        key={`card-${projectCards.indexOf(card)}`}
       />
     );
   });

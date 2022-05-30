@@ -11,7 +11,11 @@ const ProjectCard = (props: Props) => {
   const descriptionOutput: JSX.Element[] = [];
 
   props.description.forEach((value) => {
-    descriptionOutput.push(<p className="my-2">{value}</p>);
+    descriptionOutput.push(
+      <p key={`card-line-${props.description.indexOf(value)}`} className="my-2">
+        {value}
+      </p>
+    );
   });
 
   return (
