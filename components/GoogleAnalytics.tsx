@@ -18,7 +18,7 @@ const GoogleAnalytics: FC<GoogleAnalyticsProps> = ({ measurementID }) => {
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', '${measurementID}');
-      `}
+        `}
       </Script>
     </>
   );
