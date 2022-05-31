@@ -20,7 +20,7 @@ const ProjectCard = (props: Props) => {
 
   return (
     <div className="project-card">
-      <div className="h-auto w-full flex-grow p-4 md:w-3/5 md:text-left lg:w-3/5 lg:text-left">
+      <div className="project-card-left">
         <h3 className="text-xl font-bold">{props.title}</h3>
         {descriptionOutput}
         <ul>
