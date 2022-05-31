@@ -19,7 +19,7 @@ const ProjectCard = (props: Props) => {
   });
 
   return (
-    <div className="col-start-2 col-end-12 my-4 flex flex-wrap rounded-lg bg-light-gray p-4 text-center md:flex-nowrap lg:col-start-3 lg:col-end-11 lg:flex-nowrap">
+    <div className="project-card">
       <div className="h-auto w-full flex-grow p-4 md:w-3/5 md:text-left lg:w-3/5 lg:text-left">
         <h3 className="text-xl font-bold">{props.title}</h3>
         {descriptionOutput}
