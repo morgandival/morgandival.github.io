@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import ProjectCard from '../components/ProjectCard';
 
-const Projects: NextPage = () => {
+const Projects: NextPage = (): JSX.Element => {
   const projectCards = [
     {
       title: 'Till Counter',

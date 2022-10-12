@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
 
-const NotFound: NextPage = () => {
+const NotFound: NextPage = (): JSX.Element => {
   return (
     <div className="content">
       <Head>

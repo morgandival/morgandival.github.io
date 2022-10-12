@@ -3,7 +3,7 @@ import type { AppProps } from 'next/app';
 import Layout from '../components/Layout';
 import GoogleAnalytics from '../components/GoogleAnalytics';
 
-function MyApp({ Component, pageProps }: AppProps) {
+const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
   return (
     <>
       <GoogleAnalytics measurementID="G-J8EH3GEGRQ" />
@@ -12,6 +12,6 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Layout>
     </>
   );
-}
+};
 
 export default MyApp;
