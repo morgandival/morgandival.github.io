@@ -12,7 +12,10 @@ const ProjectCard = (props: Props) => {
 
   props.description.forEach((value) => {
     descriptionOutput.push(
-      <p key={`card-line-${props.description.indexOf(value)}`} className="my-2">
+      <p
+        key={`card-line-${props.description.indexOf(value)}`}
+        className="my-2"
+      >
         {value}
       </p>
     );
@@ -23,15 +26,15 @@ const ProjectCard = (props: Props) => {
       <div className="project-card-left">
         <h3 className="text-xl font-bold">{props.title}</h3>
         {descriptionOutput}
-        <ul>
-          <li className="my-4">
+        <ul className="flex flex-col md:flex-row">
+          <li className="mt-8">
             <Link href={`https://morgandival.github.io/${props.slug}`}>
-              <a className="rounded-lg bg-raisin-black py-2 px-6 text-white">
+              <a className="rounded-lg bg-raisin-black py-2 px-6 text-white md:mr-2">
                 Live Project
               </a>
             </Link>
           </li>
-          <li className="my-4">
+          <li className="mt-8">
             <Link href={`https://github.com/morgandival/${props.slug}`}>
               <a className="rounded-lg bg-raisin-black py-2 px-6 text-white">
                 Github Repository
