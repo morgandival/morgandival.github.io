@@ -9,7 +9,7 @@ const NotFound: NextPage = (): JSX.Element => {
         <title>Morgan Di Val - Page not found</title>
       </Head>
       <div className="col-start-2 col-end-12 text-2xl lg:col-start-3 lg:col-end-11">
-        <p className="my-8">This is not the page you are looking for.</p>
+        <p className="my-8">This is not the page you are looking for...</p>
         <p className="my-8">
           <Link href="/">
             <a className="rounded-lg bg-raisin-black py-2 px-6 text-white">
