@@ -1,7 +1,7 @@
-import '../styles/globals.css';
-import type { AppProps } from 'next/app';
-import Layout from '../components/Layout';
-import GoogleAnalytics from '../components/GoogleAnalytics';
+import "../styles/globals.css";
+import type { AppProps } from "next/app";
+import Layout from "@/components/Layout";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
   return (
