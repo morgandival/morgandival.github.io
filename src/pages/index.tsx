@@ -1,6 +1,6 @@
-import type { NextPage } from 'next';
-import Head from 'next/head';
-import Hero from '../src/components/Hero';
+import type { NextPage } from "next";
+import Head from "next/head";
+import Hero from "../components/Hero";
 
 const Index: NextPage = (): JSX.Element => {
   return (
