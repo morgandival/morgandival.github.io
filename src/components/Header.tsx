@@ -1,21 +1,21 @@
-import { ReactChild } from 'react';
-import MyLink from './MyLink';
+import { ReactChild } from "react";
+import MyLink from "./MyLink";
 
 const links = [
   {
-    href: '/about',
-    children: 'About',
-    styles: 'inline-block m-4',
+    href: "/about",
+    children: "About",
+    styles: "inline-block m-4",
   },
   {
-    href: '/projects',
-    children: 'Projects',
-    styles: 'inline-block m-4',
+    href: "/projects",
+    children: "Projects",
+    styles: "inline-block m-4",
   },
   {
-    href: '/contact',
-    children: 'Contact',
-    styles: 'inline-block m-4 md:mr-0 lg:mr-0',
+    href: "/contact",
+    children: "Contact",
+    styles: "inline-block m-4 md:mr-0 lg:mr-0",
   },
 ];
 
@@ -23,7 +23,10 @@ const output: Array<ReactChild> = [];
 
 links.forEach((link) => {
   output.push(
-    <li className={link.styles} key={`link-${links.indexOf(link)}`}>
+    <li
+      className={link.styles}
+      key={`link-${links.indexOf(link)}`}
+    >
       <MyLink href={link.href}>{link.children}</MyLink>
     </li>
   );
