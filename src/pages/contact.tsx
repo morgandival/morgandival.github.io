@@ -1,37 +1,37 @@
-import type { NextPage } from 'next';
-import Head from 'next/head';
+import type { NextPage } from "next";
+import Head from "next/head";
 
 const Contact: NextPage = (): JSX.Element => {
   const contactMethods = [
     {
-      name: 'Email',
-      colour: 'bg-raisin-black',
-      icon: 'bi-envelope',
-      link: 'mailto:morgandival@gmail.com',
+      name: "Email",
+      colour: "bg-raisin-black",
+      icon: "bi-envelope",
+      link: "mailto:morgandival@gmail.com",
     },
     {
-      name: 'LinkedIn',
-      colour: 'bg-indigo-dye',
-      icon: 'bi-linkedin',
-      link: 'https://www.linkedin.com/in/morgandival',
+      name: "LinkedIn",
+      colour: "bg-indigo-dye",
+      icon: "bi-linkedin",
+      link: "https://www.linkedin.com/in/morgandival",
     },
     {
-      name: 'GitHub',
-      colour: 'bg-raisin-black',
-      icon: 'bi-github',
-      link: 'https://github.com/morgandival',
+      name: "GitHub",
+      colour: "bg-raisin-black",
+      icon: "bi-github",
+      link: "https://github.com/morgandival",
     },
     {
-      name: 'Twitter',
-      colour: 'bg-oxford-blue',
-      icon: 'bi-twitter',
-      link: 'https://twitter.com/morgandival',
+      name: "Twitter",
+      colour: "bg-oxford-blue",
+      icon: "bi-twitter",
+      link: "https://twitter.com/morgandival",
     },
     {
-      name: 'Blog',
-      colour: 'bg-raisin-black',
-      icon: 'bi-pen',
-      link: 'https://www.garrulousgrimoire.com',
+      name: "Blog",
+      colour: "bg-raisin-black",
+      icon: "bi-pen",
+      link: "https://www.garrulousgrimoire.com",
     },
   ];
 
@@ -43,8 +43,8 @@ const Contact: NextPage = (): JSX.Element => {
         className={`block rounded-lg py-2 px-6 text-xl ${obj.colour} m-4 text-white`}
         href={obj.link}
       >
-        <i className={'bi ' + obj.icon}></i>
-        {' ' + obj.name}
+        <i className={"bi " + obj.icon}></i>
+        {" " + obj.name}
       </a>
     );
   });

@@ -1,5 +1,5 @@
-import { HTMLAttributes, ReactChild } from 'react';
-import Link from 'next/link';
+import { HTMLAttributes, ReactChild } from "react";
+import Link from "next/link";
 
 export interface Props extends HTMLAttributes<HTMLAnchorElement> {
   href: string;

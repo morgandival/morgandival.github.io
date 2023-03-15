@@ -1,10 +1,13 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Document, { Html, Head, Main, NextScript } from "next/document";
 
 const MyDocument = (): JSX.Element => {
   return (
     <Html lang="en">
       <Head>
-        <meta name="author" content="Morgan Di Val" />
+        <meta
+          name="author"
+          content="Morgan Di Val"
+        />
       </Head>
       <body>
         <Main />
