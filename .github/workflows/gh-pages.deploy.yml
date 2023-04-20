@@ -33,7 +33,7 @@ jobs:
       #     restore-keys: |
       #       ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.json') }}-
       - name: Install packages
-        run: pnpm ci
+        run: pnpm i
       - name: Build project
         run: pnpm build
       - name: Export project
