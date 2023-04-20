@@ -13,9 +13,9 @@ describe("Header", () => {
     const projectsLink = screen.getByText("Projects");
     const contactLink = screen.getByText("Contact");
 
-    expect(heading).toBeInTheDocument();
-    expect(aboutLink).toBeInTheDocument();
-    expect(projectsLink).toBeInTheDocument();
-    expect(contactLink).toBeInTheDocument();
+    expect(heading).toBeTruthy();
+    expect(aboutLink).toBeTruthy();
+    expect(projectsLink).toBeTruthy();
+    expect(contactLink).toBeTruthy();
   });
 });
